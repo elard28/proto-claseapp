@@ -311,7 +311,7 @@
                             <span>Principal</span>
                         </a>
                     </li> 
-                    <li>
+                    <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">people</i>
                             <span>Alumnos</span>
@@ -323,12 +323,12 @@
                             <li>
                                 <a href="profesor_asistencias.html">Tomar asistencia</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="profesor_logro.html">Poner notas</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Actividades</span>
@@ -340,8 +340,8 @@
                             <li>
                                 <a href="profesor_addexamen.html">Crear Examen</a>
                             </li>
-                            <li class="active">
-                                <a href="profesor_addlogro.html">Crear Logro</a>
+                            <li>
+                                <a href="profesor_logro.html">Crear Logro</a>
                             </li>
                         </ul>
                     </li>
@@ -534,7 +534,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Agregar Logro
+                                Poner nota
                             </h2>
                             <!--
                             <ul class="header-dropdown m-r--5">
@@ -555,7 +555,7 @@
                             <div class="row clearfix">
                                 <div class="col-sm-12">
                                     
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <div class="form-group">
                                             <select class="form-control show-tick">
                                                 <option value="">Seleccione nivel</option>
@@ -565,7 +565,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-3">
                                         <div class="form-group">
                                             <select class="form-control show-tick">
                                                 <option value="">Seleccione grado</option>
@@ -577,7 +577,17 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <select class="form-control show-tick">
+                                                <option value="">Seleccione clase</option>
+                                                <option value="10">A</option>
+                                                <option value="20">B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
                                         <div class="form-group">
                                             <select class="form-control show-tick">
                                                 <option value="">Seleccione Curso</option>
@@ -600,73 +610,32 @@
                                             </select>
                                         </div>
                                     </div>
-
-                                    <div class="col-sm-8">
+                                    
+                                    <div class="col-sm-5">
                                     <label for="email_address">Logro</label>
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Descripcion">
+                                        <div class="form-group">
+                                            <select class="form-control show-tick">
+                                                <option value="10">001 | IDENTIFICA EL CONJUNTO DE LOS NÚMEROS RACIONALES Y LA SOLUCIÓN DE OPERACIONES ENTRE ELLOS</option>
+                                                <option value="20">002 | IDENTIFICA EL CONJUNTO DE LOS NÚMEROS IRRACIONALES Y SU REPRESENTACIÓN EN LA RECTA NUMÉRICA</option>
+                                                <option value="30">003 | IDENTIFICA EL CONJUNTO DE LOS NÚMEROS REALES Y LA SOLUCIÓN DE OPERACIONES ENTRE ELLOS</option>
+                                            </select>
                                         </div>
-                                    </div>
                                     </div>
                                     
-                                    <div class="col-sm-2">
-                                    <label for="email_address">Nro de actividades</label>
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Nro de actividades", value='3'>
+                                    <div class="col-sm-5">
+                                    <label for="email_address">Actividad</label>
+                                        <div class="form-group">
+                                            <select class="form-control show-tick">
+                                                <option value="10">Solución de ejercicios</option>
+                                                <option value="20">Solución de ejercicios</option>
+                                                <option value="30">Solución de ejercicios</option>
+                                                <option value="40">Solución de ejercicios</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    </div>
+
                                     
-                                    <div class="col-sm-10">
-                                    <label for="email_address">Actividades</label>
-                                    </div>
-                                        
-                                    <div class="col-sm-10">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Actividad">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Porcentaje">
-                                        </div>
-                                    </div>
-                                    </div>
                                     
-                                    <div class="col-sm-10">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Actividad">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Porcentaje">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    
-                                    <div class="col-sm-10">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Actividad">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Porcentaje">
-                                        </div>
-                                    </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -674,7 +643,100 @@
 
 
                             <div class="form-group">
-
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Foto</th>
+                                            <th>Alumno</th>
+                                            <th>Nota</th>
+                                            <th>Observaciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Foto</th>
+                                            <th>Alumno</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Garcia Enoki, Jorge Jonathan</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Guevara Guevara, Elard Hernan</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Nina Sanchez, Estefany Kelly</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Humala Tasso, Ollanta</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Fujimori Higuchi, Keiko Sofia</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Santisteban Pablo, Julio Omar</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Chocano Polar, Patricia Janisse</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Juarez Diaz, Mario Cesar</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Toledo Manrique, Alejando</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td><img src="images/user.png" width="48" height="48" alt="User" /></td>
+                                            <td>Cuadros Vargas, Ernesto</td>
+                                            <td scope="row"><div class="form-line"><input type="text" class="form-control" placeholder="0.0" /></div></td>
+                                            <td><div class="form-line"><textarea rows="3" class="form-control no-resize" placeholder="Observaciones"></textarea></div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <button type="button" class="btn btn-primary m-t-15 waves-effect" data-toggle="modal" data-target="#smallModal">Confirmar</button>
                             <button type="button" class="btn btn-danger m-t-15 waves-effect">Cancelar</button>
                             </div>

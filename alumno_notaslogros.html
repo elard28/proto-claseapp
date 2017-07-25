@@ -304,7 +304,7 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MENU</li>
+<li class="header">MENU</li>
                     <li>
                         <a href="">
                             <i class="material-icons">home</i>
@@ -313,42 +313,31 @@
                     </li> 
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">people</i>
-                            <span>Alumnos</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="profesor_gestion.html">Lista de alumnos</a>
-                            </li>
-                            <li>
-                                <a href="profesor_asistencias.html">Tomar asistencia</a>
-                            </li>
-                            <li>
-                                <a href="profesor_logro.html">Poner notas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Actividades</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="profesor_addtarea.html">Crear Tarea</a>
+                                <a href="alumno_tareas.html">Tareas</a>
                             </li>
                             <li>
-                                <a href="profesor_addexamen.html">Crear Examen</a>
+                                <a href="alumno_examenes.html">Examenes</a>
                             </li>
-                            <li class="active">
-                                <a href="profesor_addlogro.html">Crear Logro</a>
+                            <li>
+                                <a href="alumno_eventos.html">Eventos</a>
                             </li>
                         </ul>
                     </li>
+                    <li class="active">
+                        <a href="alumno_notas.html">
+                            <i class="material-icons">font_download</i>
+                            <span>Avance curricular</span>
+                        </a>
+                    </li>
                     <li>
-                        <a href="profesor_eventos.html">
-                            <i class="material-icons">event_note</i>
-                            <span>Eventos</span>
+                        <a href="alumno_observaciones.html">
+                            <i class="material-icons">collections_bookmark</i>
+                            <span>Observaciones</span>
                         </a>
                     </li>
                     <li>
@@ -358,10 +347,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="profesor_email.html">Enviar correo</a>
+                                <a href="alumno_email.html">Enviar correo</a>
                             </li>
                             <li>
-                                <a href="profesor_email_masivo.html">Enviar correo masivo</a>
+                                <a href="alumno_email_especifico.html">Enviar correo especifico</a>
                             </li>
                         </ul>
                     </li> 
@@ -534,7 +523,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Agregar Logro
+                                Logros
                             </h2>
                             <!--
                             <ul class="header-dropdown m-r--5">
@@ -555,28 +544,7 @@
                             <div class="row clearfix">
                                 <div class="col-sm-12">
                                     
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <select class="form-control show-tick">
-                                                <option value="">Seleccione nivel</option>
-                                                <option value="10">Primaria</option>
-                                                <option value="20">Secundaria</option>
-                                            </select>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <select class="form-control show-tick">
-                                                <option value="">Seleccione grado</option>
-                                                <option value="10">1ro</option>
-                                                <option value="20">2do</option>
-                                                <option value="30">3ro</option>
-                                                <option value="40">4to</option>
-                                                <option value="50">5to</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <select class="form-control show-tick">
@@ -589,10 +557,10 @@
                                     </div>
 
                                     
-                                    <div class="col-sm-2">
-                                    <label for="email_address">Periodo</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group">
                                             <select class="form-control show-tick">
+                                                <option value>Seleccione un periodo</option>
                                                 <option value="10">P1</option>
                                                 <option value="20">P2</option>
                                                 <option value="30">P3</option>
@@ -600,84 +568,158 @@
                                             </select>
                                         </div>
                                     </div>
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect" data-toggle="modal" data-target="#smallModal">Buscar</button>
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect" onclick="window.location.href='alumno_notasgeneral.html'">Notas Generales</button>
+                                        </div>
+                                    </div>
 
-                                    <div class="col-sm-8">
-                                    <label for="email_address">Logro</label>
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Descripcion">
-                                        </div>
-                                    </div>
-                                    </div>
+                            <div class="body table-responsive">
+                            <label for="email_address">001 | IDENTIFICA EL CONJUNTO DE LOS NÚMEROS RACIONALES Y LA SOLUCIÓN DE OPERACIONES ENTRE ELLOS</label>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ACTIVIDAD</th>
+                                        <th>FECHA</th>
+                                        <th>%</th>
+                                        <th>NOTA</th>
+                                        <th>VR.</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Nota Total</th>
+                                            <th>4.5</th>
+                                        </tr>
+                                    </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Solución de ejercicios</td>
+                                        <td>2017-05-01</td>
+                                        <td>50</td>
+                                        <td>4.5</td>
+                                        <td>2.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solución de ejercicios</td>
+                                        <td>2017-05-15</td>
+                                        <td>50</td>
+                                        <td>4.5</td>
+                                        <td>2.25</td>
+                                    </tr>
                                     
-                                    <div class="col-sm-2">
-                                    <label for="email_address">Nro de actividades</label>
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Nro de actividades", value='3'>
-                                        </div>
-                                    </div>
-                                    </div>
+                                </tbody>
+                            </table>
+                                
+                            <label for="email_address">002 | IDENTIFICA EL CONJUNTO DE LOS NÚMEROS IRRACIONALES Y SU REPRESENTACIÓN EN LA RECTA NUMÉRICA.</label>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ACTIVIDAD</th>
+                                        <th>FECHA</th>
+                                        <th>%</th>
+                                        <th>NOTA</th>
+                                        <th>VR.</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Nota Total</th>
+                                            <th>4.5</th>
+                                        </tr>
+                                    </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Solución de ejercicios</td>
+                                        <td>2017-05-01</td>
+                                        <td>50</td>
+                                        <td>4.5</td>
+                                        <td>2.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solución de ejercicios</td>
+                                        <td>2017-05-15</td>
+                                        <td>50</td>
+                                        <td>4.5</td>
+                                        <td>2.25</td>
+                                    </tr>
                                     
-                                    <div class="col-sm-10">
-                                    <label for="email_address">Actividades</label>
-                                    </div>
-                                        
-                                    <div class="col-sm-10">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Actividad">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Porcentaje">
-                                        </div>
-                                    </div>
-                                    </div>
+                                </tbody>
+                            </table>
+
+                            <label for="email_address">003 | IDENTIFICA EL CONJUNTO DE LOS NÚMEROS REALES Y LA SOLUCIÓN DE OPERACIONES ENTRE ELLOS.</label>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ACTIVIDAD</th>
+                                        <th>FECHA</th>
+                                        <th>%</th>
+                                        <th>NOTA</th>
+                                        <th>VR.</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Nota Total</th>
+                                            <th>-</th>
+                                        </tr>
+                                    </tfoot>
+                                <tbody>
+
                                     
-                                    <div class="col-sm-10">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Actividad">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Porcentaje">
-                                        </div>
-                                    </div>
-                                    </div>
+                                </tbody>
+                            </table>
+                                
+                            <label for="email_address">004 | RESUELVE OPERACIONES COMO LA POTENCIACIÓN, RADICACIÓN Y LOGARITMACIÓN ENTRE EL CONJUNTO DE LOS NÚMEROS REALES.</label>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ACTIVIDAD</th>
+                                        <th>FECHA</th>
+                                        <th>%</th>
+                                        <th>NOTA</th>
+                                        <th>VR.</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Nota Total</th>
+                                            <th>-</th>
+                                        </tr>
+                                    </tfoot>
+                                <tbody>
+
                                     
-                                    <div class="col-sm-10">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Actividad">
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Porcentaje">
-                                        </div>
-                                    </div>
-                                    </div>
+                                </tbody>
+                            </table>
+                                
+
+
+
+                        </div>
+                                    
+
 
                                 </div>
                             </div>
 
 
 
-                            <div class="form-group">
-
-                            <button type="button" class="btn btn-primary m-t-15 waves-effect" data-toggle="modal" data-target="#smallModal">Confirmar</button>
-                            <button type="button" class="btn btn-danger m-t-15 waves-effect">Cancelar</button>
-                            </div>
+                            
 
                             
 
